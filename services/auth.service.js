@@ -22,7 +22,7 @@ const signin = async (username, password) => {
     const isPasswordMatch = await user.isPasswordMatch(password);
 
     if (isPasswordMatch) {
-      return user.id;
+      return user;
     }
   }
 
